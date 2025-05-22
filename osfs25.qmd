@@ -1,0 +1,64 @@
+---
+title: 25 years of open source forecasting software
+author: Rob J Hyndman
+date: 25 June 2025
+toc: false
+format:
+  presentation-beamer:
+    pdf-engine: pdflatex
+    knitr:
+      opts_chunk:
+        dev: "CairoPDF"
+    keep-tex: true
+    fig-width: 9
+    fig-height: 4
+highlight-style: tango
+execute:
+  echo: false
+  message: false
+  warning: false
+  cache: false
+---
+
+```{r}
+#| label: load-packages
+library(fpp3)
+```
+
+# R packages
+
+* `arima`, `HoltWinters` and `StructTS` from stats package
+* `forecast` package history
+* `fable` and friends
+* `modeltime`
+* `hts`, `thief`, `flap`
+* `smooth`, `greybox`, `legion`, `MAPA`
+* `nnfor`, `MAPA`, `tsutils`, `tsintermittent`
+* `tsmodels` repo
+* `tsissm`
+* `prophet`, `fable.prophet`
+* `tsutils`, `forecTheta`
+* `Ucomp`, `bsts`, `BayesSSM`, `autostsm.statespacer`, 
+* `bayesforecast`, `BayesARIMAX`, `tfarima`, 
+* `glarma`, `GAS`, `gasmodel`, `kDGLM`, `mvgam`, 
+* `PTSR`, `tscount`, `acp`, `ZIM`, `ZINARp`, 
+* `scoringRules`, `scoringutils`
+* `ForecastComb`, `forecastHybrid`, `opera`
+* `forecastML`
+
+# CRAN Task View Time Series
+
+# Python packages
+
+* `pmdarima`
+* `sktime`
+* Nixtla: `statsforecast`, `hierarchicalforecast`
+* `GluonTS`
+* `Merlion`
+* `statsmodels`,
+* `pyhts`
+* `Darts`
+
+# Julia
+
+* `forecast`
