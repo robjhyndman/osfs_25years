@@ -25,6 +25,14 @@ execute:
 library(fpp3)
 ```
 
+# Early R forecasting
+
+`ts` package:
+
+* `HoltWinters`: point forecasts only, with optional multiplicative seasonality.
+* `arima`: state space formulation of ARIMA models, with 
+* `structTS`
+
 # R packages
 
 * `arima`, `HoltWinters` and `StructTS` from stats package
