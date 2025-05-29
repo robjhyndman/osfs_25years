@@ -27,11 +27,78 @@ library(fpp3)
 
 # Early R forecasting
 
-`ts` package:
+`ts` package (now `stats` package):
 
-* `HoltWinters`: point forecasts only, with optional multiplicative seasonality.
-* `arima`: state space formulation of ARIMA models, with 
-* `structTS`
+* `HoltWinters()`: point forecasts only, with optional multiplicative seasonality (written by David Meyer)
+* `arima()`: state space formulation of ARIMA models\newline (written by Brian Ripley)
+* `structTS()`: Basic structural models as per Harvey\newline (written by Brian Ripley)
+
+# forecast package for R
+\fontsize{13}{14}\sf
+
+| Date | Event |
+|------|-------|
+| Pre 2003 | Collection of functions used for consulting projects |
+| July/August 2003 | **ets** and **thetaf** added |
+| August 2006 | v1.0 available on CRAN |
+| May 2007 | **auto.arima** added |
+| July 2008 | JSS paper (Hyndman & Khandakar) |
+| September 2009 | v2.0. Unbundled. |
+| May 2010 | **arfima** added |
+| Feb/March 2011 | **tslm**, **stlf**, **naive**, **snaive** added |
+| August 2011 | v3.0. Box Cox transformations added |
+| December 2011 | **tbats** added |
+| April 2012 | Package moved to github |
+
+
+# forecast package for R
+\fontsize{13}{14}\sf
+
+| Date | Event |
+|------|-------|
+| November 2012 | v4.0. **nnetar** added |
+| June 2013 | Major speed-up of **ets** |
+| January 2014 | v5.0. **tsoutliers** and **tsclean** added |
+| May 2015 | v6.0. Added several new plots |
+| February 2016 | v7.0. Added ggplot2 graphics & bias adjustment |
+| March 2017 | v8.0. Added **tsCV** & **baggedETS** |
+| April 2018 | v8.3. Added **mstl**, and revised **auto.arima** |
+| April 2025 | v8.24. Last update |
+
+
+# forecast package for R
+
+Graph of downloads per month
+
+# Automatic forecasting in R
+
+* `auto.arima` + `forecast`
+* `ets` + `forecast`
+* `tbats` + `forecast`
+* `bats` + `forecast`
+* `arfima` + `forecast`
+* `ar` + `forecast`
+* `nnetar` + `forecast`
+* `stlm` + `forecast`
+
+* `stlf`
+* `thetaf`
+* `dshw`, `hw`, `holt`, `ses`
+* `splinef`
+* `rwf`, `naive`
+* `croston`
+
+###
+All produce an object of class `forecast`
+
+# ets algorithm in R
+
+Based on Hyndman, Koehler, Snyder \& Grose (IJF 2002):
+
+* For each model, optimize parameters and initial values of underlying state space model using MLE.
+* Select best method using AICc.
+* Produce forecasts and prediction intervals using best method.
+
 
 # R packages
 
@@ -46,10 +113,10 @@ library(fpp3)
 * `tsissm`
 * `prophet`, `fable.prophet`
 * `tsutils`, `forecTheta`
-* `Ucomp`, `bsts`, `BayesSSM`, `autostsm.statespacer`, 
-* `bayesforecast`, `BayesARIMAX`, `tfarima`, 
-* `glarma`, `GAS`, `gasmodel`, `kDGLM`, `mvgam`, 
-* `PTSR`, `tscount`, `acp`, `ZIM`, `ZINARp`, 
+* `Ucomp`, `bsts`, `BayesSSM`, `autostsm.statespacer`,
+* `bayesforecast`, `BayesARIMAX`, `tfarima`,
+* `glarma`, `GAS`, `gasmodel`, `kDGLM`, `mvgam`,
+* `PTSR`, `tscount`, `acp`, `ZIM`, `ZINARp`,
 * `scoringRules`, `scoringutils`
 * `ForecastComb`, `forecastHybrid`, `opera`
 * `forecastML`
