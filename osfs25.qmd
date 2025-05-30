@@ -300,7 +300,7 @@ All produce an object of class \texttt{forecast}
 
 ```{r}
 top_ten <- top_ten |>
-  mutate(Count = round(Count / 1e3,1)) 
+  mutate(Count = round(Count / 1e3))
 colnames(top_ten) <- c("Package", "Downloads ('000)")
 top_ten |>
   kbl(longtable = FALSE, booktabs = TRUE, linesep="") |>
