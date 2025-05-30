@@ -163,7 +163,7 @@ top_ten_last5 <- downloads |>
 
 \pause
 
-### 
+###
 * Each had a `predict()` method, but output was inconsistent.
 * `HoltWinters` did not produce prediction intervals.
 
@@ -329,7 +329,35 @@ downloads |>
   labs(y = "Downloads (thousands)")
 ```
 
-# Python 
+## Top ten downloaded forecasting packages on CRAN
+
+```{r}
+downloads |>
+  rename(Package = package) |>
+  filter(Package %in% top_ten$Package, Month >= yearmonth("2020-Jan")) |>
+  filter(Package != "forecast") |>
+  ggplot(aes(x = Month, y = Count/1e3, color = Package)) +
+  geom_line() +
+  labs(y = "Downloads (thousands)")
+```
+
+## ETS
+
+* `stats::HoltWinters()`
+* `forecast::ets()`
+* `fable::ETS()`
+* `smooth::es()`
+
+## ARIMA
+
+* `stats::arima()`
+* `forecast::Arima()`, `forecast::auto.arima()`
+* `fable::ARIMA()`
+* `smooth::msarima()`
+
+## ETS
+
+# Python
 
 ## Python packages
 
