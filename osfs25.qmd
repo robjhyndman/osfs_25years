@@ -125,18 +125,15 @@ packages <- c(
 downloads <- cran_downloads(
   packages = packages,
   from = as.Date("2000-01-01"),
-  to = Sys.Date()
+  to = as.Date("2025-05-31")
 ) |>
   as_tibble()
 first_download <- downloads |>
   filter(count > 0) |>
   pull(date) |>
-  min()  
+  min()
 downloads <- downloads |>
-  filter(
-    date >= first_download,
-    date < Sys.Date() - 1 # Avoid partial counts
-  ) |>
+  filter(date >= first_download) |>
   mutate(Month = yearmonth(date)) |>
   group_by(Month, package) |>
   summarise(Count = sum(count), .groups = "drop")
