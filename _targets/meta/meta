@@ -3,7 +3,6 @@ packages|stem|81f867ce31debc02|f6bfc8ad7f2d7303|5e5bdd4a44d8643e|-1880897961||t2
 top_ten_last5|stem|1cdf819c716a371e|29e1d265700bb0c9|ecfc8b3e5b69cdba|1872837120||t20238.0786677993s|s275b|275|rds|local|vector|||0.012||
 forecast_history|object|66fb5486ed6f1ced
 downloads|stem|0deb3fb4f1be68da|5643ac08e3d69465|ca6364ed79bd2f09|2030425047||t20238.091633564s|s17884b|17884|rds|local|vector|||22.924|Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future|
-plot1|stem|e538db0532f54ead|2e0fd63f6ef97633|50ae5f5337d110cd|-1880136255||t20238.0922444483s|s109610b|109610|rds|local|vector|||0.019||
 top10|stem|4ce52c308d876ff9|d722a74e4f5fb69f|2e734b0a0ac9d0f6|675525796||t20238.0922455363s|s275b|275|rds|local|vector|||0.025||
 top_ten_table|stem|18a9f23567a4b8e4|6588dfe725b3d9af|7111de95aeb1bd6a|757054447||t20238.0938577466s|s658b|658|rds|local|vector|||0.017||
 plot2|stem|b0146e21822a2c10|77455f8304f77fda|eb94ec4eca3cc5b7|-1544046761||t20238.0950928818s|s120536b|120536|rds|local|vector|||0.03||
@@ -20,7 +19,15 @@ get_top_ten|function|53a2a063216448cb
 .Random.seed|object|a8102b8959b6e5fd
 make_plot1|function|792dbc287458c42c
 make_plot2|function|62ae425ea2b31f21
+plot1|stem|31250ee795d5280a|85d908e58babf3a2|21984de07070ef62|-1880136255||t20241.1247307112s|s242990b|242990|rds|local|vector|||0.166||
+plot2a|stem|8bfd97abb9e8c3e5|573471bc17a5f775|21984de07070ef62|1659905545||t20241.1247357807s|s262154b|262154|rds|local|vector|||0.03||
+plot2b|stem|b04542f3f83f3511|022e5aa3bd481a70|21984de07070ef62|-478493975||t20241.1247393224s|s266259b|266259|rds|local|vector|||0.039||
+plot2c|stem|ce6ea22a47b1c7cb|4e6262478d2c2489|21984de07070ef62|25416129||t20241.1247420886s|s259749b|259749|rds|local|vector|||0.04||
+create_ets_benchmark|function|f16e9899fb24f848
+get_top_ten|function|53a2a063216448cb
+.Random.seed|object|7f9a2ecfcf0ee4e5
 make_top_ten_table|function|22cc014d43859c7a
+make_download_plot|function|df868b652799968a
 get_downloads|function|21b22b1a22fbff15
 ctv_packages|object|b950560a3f1e64ca
 create_arima_benchmark|function|94aee30dac29cb88

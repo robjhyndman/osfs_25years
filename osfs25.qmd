@@ -75,15 +75,15 @@ ggplot2::theme_set(
 * Each had a `predict()` method, but output was inconsistent.
 * `HoltWinters` did not produce prediction intervals.
 
-## forecast package for R
+## forecast package for R: motivation
 
 * Consistent output for existing methods by introducting new S3 generic `forecast()` and new S3 class `forecast`.
-* Add new methods including `ets()`, `thetaf()`, `auto.arima()`.
-* Modelling functions should be able to be swapped while leaving code unchanged.
+* New methods including `ets()`, `thetaf()`, `auto.arima()`.
+* Modelling functions can be swapped while leaving code unchanged.
 * Easy plotting tools with new `plot.forecast()` method.
-* Add forecasting tools such as `accuracy()` calculations.
+* New forecasting tools such as `accuracy()` calculations.
 
-## forecast package for R
+## forecast package for R: history
 \fontsize{13}{14}\sf\vspace*{-0.5cm}
 
 ```{r}
@@ -91,7 +91,7 @@ ggplot2::theme_set(
 tar_read(table1)
 ```
 
-## forecast package for R
+## forecast package for R: history
 \fontsize{13}{14}\sf\vspace*{-0.5cm}
 
 ```{r}
@@ -170,13 +170,19 @@ tar_read(top_ten_table)
 ## Top ten downloaded forecasting packages on CRAN
 
 ```{r}
-tar_read(plot2)
+tar_read(plot2a)
 ```
 
 ## Top ten downloaded forecasting packages on CRAN
 
 ```{r}
-tar_read(plot3)
+tar_read(plot2b)
+```
+
+## Top ten downloaded forecasting packages on CRAN
+
+```{r}
+tar_read(plot2c)
 ```
 
 ## ETS
@@ -278,7 +284,13 @@ tibble(
   Covariates = "Yes",
 ) |>
   mutate(Function = paste0("\\texttt{", Function, "}")) |>
-  kbl(booktabs = TRUE, format = "latex", escape = FALSE, align = "llll", linesep = "")
+  kbl(
+    booktabs = TRUE,
+    format = "latex",
+    escape = FALSE,
+    align = "llll",
+    linesep = ""
+  )
 ```
 
 ## forecast::auto.arima()
