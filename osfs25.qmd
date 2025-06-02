@@ -362,16 +362,87 @@ tar_read(arima_benchmark)
 
 # Python
 
-## Python packages
+## Python packages with statistical models
 
-* `pmdarima`
-* `sktime`
-* Nixtla: `statsforecast`, `hierarchicalforecast`
-* `GluonTS`
-* `Merlion`
-* `statsmodels`,
-* `pyhts`
-* `Darts`
+* `statsmodels` (2016--2024)
+* `pmdarima` (2017--2023)
+* `sktime` (2019--2025)
+* `GluonTS` (AWS, 2019--2025)
+* `Darts` (2020--2025)
+* `Merlion` (Salesforce, 2021--2023)
+* `statsforecast` (Nixtla 2022--2025)
+* `hierarchicalforecast` (Nixtla 2022--2025)
+* `pyhts` (2022)
+* `aeon` (2023--2025) [fork of `sktime`]
+
+## Most complete packages
+
+:::: {.columns}
+
+:::  {.column width="50%"}
+
+### `sktime`:
+
+* AutoARIMA
+* AutoETS
+* BATS/TBATS
+* Theta
+* STLForecaster
+* Croston
+* Bagged-ETS
+* Prophet
+
+:::
+:::  {.column width="50%"}
+
+### `statsforecast`:
+
+* AutoARIMA
+* AutoETS
+* AutoTBATS
+* Theta
+* MSTL
+* Croston
+* TSB, ADIDA
+* ARCH/GARCH
+
+:::
+::::
+
+## Python reconciliation packages
+
+* hierarchicalforecast
+* sktime
+* pyhts
+* Darts
+
+## Foundation models
+
+* Time-LLM (Jin et al. 2023)
+* TimeGPT-1 (Garza, Challu, and Mergenthaler-Canseco 2023)
+* Lag-Llama (Rasul et al. 2023)
+* TimesFM (Das et al. 2023)
+* Tiny Time Mixers (Ekambaram et al. 2024)
+* Moirai (Woo et al. 2024)
+* MOMENT (Goswami et al. 2024)
+* UniTS (Gao et al. 2024)
+* Chronos (Ansari et al. 2024)
+
+## Other active Python forecasting software projects
+
+*  Prophet
+*  Neuralprophet
+*  Kats
+* `mlforecast` (Nixtla 2022--2025)
+* `neuralforecast` (Nixtla 2022--2025)
+
+## Neural forecasting methods available in `NeuralForecast`
+
+"Autoformer", "BiTCN", "DeepAR", "DeepNPTS", "DilatedRNN", "FEDformer", "GRU", "HINT",
+        "Informer", "iTransformer", "KAN", "LSTM", "MLP", "MLPMultivariate", "NBEATS", "NBEATSx",
+        "NHITS", "NLinear", "PatchTST", "RNN", "SOFTS", "StemGNN", "TCN", "TFT", "TiDE",
+        "TimeMixer", "TimeLLM", "TimesNet", "TSMixer", "TSMixerx", "VanillaTransformer"
+
 
 # Julia
 ## Julia
