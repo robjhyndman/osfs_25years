@@ -12,6 +12,9 @@ format:
     keep-tex: true
     fig-width: 8
     fig-height: 4.3
+    include-in-header:
+      - text: |
+          \usepackage{multicol}
 highlight-style: tango
 execute:
   echo: false
@@ -366,22 +369,38 @@ tar_read(arima_benchmark)
 
 * `statsmodels` (2016--2024)
 * `pmdarima` (2017--2023)
-* `sktime` (2019--2025)
-* `GluonTS` (AWS, 2019--2025)
-* `Darts` (2020--2025)
+* `sktime` (2019--2025) --- includes wrapper to `pmdarima` and to some `StatsForecast` functions
+* `GluonTS` (AWS, 2019--2025) --- via wrapper to R forecast package
+* `Darts` (2020--2025) --- some wrappers to `StatsForecast`
 * `Merlion` (Salesforce, 2021--2023)
-* `statsforecast` (Nixtla 2022--2025)
-* `hierarchicalforecast` (Nixtla 2022--2025)
-* `pyhts` (2022)
-* `aeon` (2023--2025) [fork of `sktime`]
+* `StatsForecast` (Nixtla 2022--2025)
+* `aeon` (2023--2025) --- fork of `sktime`
+
+\begin{textblock}{3.6}(11.7,1.2)\begin{block}{}(Release dates)\end{block}\end{textblock}
 
 ## Most complete packages
 
 :::: {.columns}
 
-:::  {.column width="50%"}
 
-### `sktime`:
+:::  {.column width="40%"}
+
+### `statsmodels`
+
+* ARIMA (not automated)
+* ETS (not automated)
+* MSTL
+* Theta
+* Regime switching
+* ARDL
+* ECM
+* VARMA
+
+:::
+
+:::  {.column width="30%"}
+
+### `sktime`
 
 * AutoARIMA
 * AutoETS
@@ -393,9 +412,9 @@ tar_read(arima_benchmark)
 * Prophet
 
 :::
-:::  {.column width="50%"}
+:::  {.column width="30%"}
 
-### `statsforecast`:
+### `StatsForecast`
 
 * AutoARIMA
 * AutoETS
@@ -409,9 +428,92 @@ tar_read(arima_benchmark)
 :::
 ::::
 
+## Python packages with ML methods
+
+* `sktime` (2019--2025)
+* `GluonTS` (AWS, 2019--2025)
+* `Darts` (2020--2025)
+* `Merlion` (Salesforce, 2021--2023)
+* `MLforecast` (Nixtla 2022--2025)
+* `NeuralForecast` (Nixtla 2022--2025)
+* `aeon` (2023--2025) --- fork of `sktime`
+* `skforecast` (2021--2025)
+* `NeuralProphet` (2020--2024)
+* `Kats` (2021--2022)
+
+\begin{textblock}{3.6}(11.7,1.2)\begin{block}{}(Release dates)\end{block}\end{textblock}
+
+## Forecasting methods available in `NeuralForecast`
+
+\begin{textblock}{15}(0,1)
+\begin{multicols}{3}
+\begin{itemize}\tightlist
+\item \texttt{Autoformer}
+\item \texttt{BiTCN}
+\item \texttt{DeepAR}
+\item \texttt{DeepNPTS}
+\item \texttt{DilatedRNN}
+\item \texttt{FEDformer}
+\item \texttt{GRU}
+\item \texttt{HINT}
+\item \texttt{Informer}
+\item \texttt{iTransformer}
+\item \texttt{KAN}
+\item \texttt{LSTM}
+\item \texttt{MLP}
+\item \texttt{MLP\rlap{Multivariate}}
+\item \texttt{NBEATS}
+\item \texttt{NBEATSx}
+\item \texttt{NHITS}
+\item \texttt{NLinear}
+\item \texttt{PatchTST}
+\item \texttt{RNN}
+\item \texttt{SOFTS}
+\item \texttt{StemGNN}
+\item \texttt{TCN}
+\item \texttt{TFT}
+\item \texttt{TiDE}
+\item \texttt{TimeMixer}
+\item \texttt{TimeLLM}
+\item \texttt{TimesNet}
+\item \texttt{TSMixer}
+\item \texttt{TSMixerx}
+\item \texttt{Vanilla\rlap{Transformer}}
+\end{itemize}
+\end{multicols}
+\end{textblock}
+
+
+## ML forecasting methods available in `GluonTS`
+\vspace*{-0.25cm}
+\begin{multicols}{2}
+\begin{itemize}\tightlist
+\item \texttt{DeepAR}
+\item \texttt{DeepState}
+\item \texttt{DeepFactor}
+\item \texttt{Deep Renewal Processes}
+\item \texttt{GPForecaster}
+\item \texttt{MQ-CNN}
+\item \texttt{MQ-RNN}
+\item \texttt{N-BEATS}
+\item \texttt{Rotbaum}
+\item \texttt{Temporal Fusion Transformer}
+\item \texttt{Transformer}
+\item \texttt{WaveNet}
+\item \texttt{SimpleFeedForward}
+\item \texttt{DeepNPTS}
+\item \texttt{MQF2}
+\item \texttt{DeepVAR}
+\item \texttt{GPVAR}
+\item \texttt{LSTNet}
+\item \texttt{DeepTPP}
+\item \texttt{DeepVARHierarchical}
+\end{itemize}
+\end{multicols}
+
 ## Python reconciliation packages
 
-* hierarchicalforecast
+* HierarchicalForecast (Nixtla)
 * sktime
 * pyhts
 * Darts
@@ -428,23 +530,15 @@ tar_read(arima_benchmark)
 * UniTS (Gao et al. 2024)
 * Chronos (Ansari et al. 2024)
 
-## Other active Python forecasting software projects
-
-*  Prophet
-*  Neuralprophet
-*  Kats
-* `mlforecast` (Nixtla 2022--2025)
-* `neuralforecast` (Nixtla 2022--2025)
-
-## Neural forecasting methods available in `NeuralForecast`
-
-"Autoformer", "BiTCN", "DeepAR", "DeepNPTS", "DilatedRNN", "FEDformer", "GRU", "HINT",
-        "Informer", "iTransformer", "KAN", "LSTM", "MLP", "MLPMultivariate", "NBEATS", "NBEATSx",
-        "NHITS", "NLinear", "PatchTST", "RNN", "SOFTS", "StemGNN", "TCN", "TFT", "TiDE",
-        "TimeMixer", "TimeLLM", "TimesNet", "TSMixer", "TSMixerx", "VanillaTransformer"
-
 
 # Julia
 ## Julia
 
 * `forecast`
+
+# Books
+
+## Forecasting: principles and practice
+
+\placefig{0}{1.1}{width=16cm}{figs/OTexts.png}
+\begin{textblock}{2.8}(12.5,0)\begin{block}{}\tt OTexts.com\end{block}\end{textblock}
