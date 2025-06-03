@@ -506,7 +506,10 @@ tar_read(py_reco_table)
 # Julia
 ## Julia
 
-* `forecast`
+* No active projects
+* No Julia-first packages that provide general forecasting methods.
+* `viraltux/Forecast.jl`: 2020--2021. Descriptive stats and plots, but only AR forecasting.
+* `colintbowers/RARIMA.jl`: 2015--2018. Wrapper for R packages `stats` and `forecast`. No longer working
 
 # Data
 
