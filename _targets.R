@@ -41,5 +41,5 @@ list(
   tar_target(r_reco_table, reco_pkg_table(r_reco)),
   tar_target(py_reco, Python_reconciliation_packages()),
   tar_target(py_reco_table, reco_pkg_table(py_reco)),
-  tar_quarto(osfs25, "osfs25.qmd")
+  tar_quarto(osfs25, "osfs25.qmd", extra_files = fs::dir_ls("figs"))
 )
