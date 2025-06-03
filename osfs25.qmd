@@ -1,5 +1,5 @@
 ---
-title: 25 years of open source forecasting software
+title: 25 years of open&nbsp;source forecasting&nbsp;software
 author: Rob J Hyndman
 date: 26 June 2025
 toc: true
@@ -12,9 +12,8 @@ format:
     keep-tex: true
     fig-width: 8
     fig-height: 4.3
-    include-in-header:
-      - text: |
-          \usepackage{multicol}
+    template-partials:
+      - before-title.tex
 highlight-style: tango
 execute:
   echo: false
@@ -32,30 +31,7 @@ library(fpp3)
 library(forecast)
 library(smooth)
 
-options(
-  digits = 4,
-  width = 90,
-  ggplot2.continuous.colour = "viridis",
-  ggplot2.continuous.fill = "viridis",
-  ggplot2.discrete.colour = c(
-    "#D55E00",
-    "#0072B2",
-    "#009E73",
-    "#CC79A7",
-    "#E69F00",
-    "#56B4E9",
-    "#F0E442"
-  ),
-  ggplot2.discrete.fill = c(
-    "#D55E00",
-    "#0072B2",
-    "#009E73",
-    "#CC79A7",
-    "#E69F00",
-    "#56B4E9",
-    "#F0E442"
-  )
-)
+options(digits = 4, width = 80)
 ggplot2::theme_set(
   theme_get() + theme(text = element_text(family = "Fira Sans"))
 )
@@ -80,7 +56,7 @@ ggplot2::theme_set(
 
 ## forecast package for R: motivation
 
-* Consistent output for existing methods by introducting new S3 generic `forecast()` and new S3 class `forecast`.
+* Consistent output for existing methods by introducing new S3 generic `forecast()` and new S3 class `forecast`.
 * New methods including `ets()`, `thetaf()`, `auto.arima()`.
 * Modelling functions can be swapped while leaving code unchanged.
 * Easy plotting tools with new `plot.forecast()` method.
@@ -103,13 +79,6 @@ tar_read(table2)
 ```
 
 \vspace*{10cm}
-
-## forecast package for R
-
-```{r}
-#| label: plot1
-tar_read(plot1)
-```
 
 ## forecast package for R
 \fontsize{13}{14}\sf\vspace*{-0.2cm}
@@ -224,18 +193,14 @@ ets(AirPassengers) |> forecast(h = 10)
 
 ```{r}
 #| echo: true
-as_tsibble(AirPassengers) |>
-  model(ets = ETS(value)) |>
-  report()
+as_tsibble(AirPassengers) |> model(ETS(value)) |> report()
 ```
 
 ## fable::ETS()
 
 ```{r}
 #| echo: true
-as_tsibble(AirPassengers) |>
-  model(ets = ETS(value)) |>
-  forecast(h = 10)
+as_tsibble(AirPassengers) |> model(ETS(value)) |> forecast(h = 10)
 ```
 
 ## smooth::es()
@@ -314,18 +279,14 @@ auto.arima(AirPassengers, lambda = 0) |> forecast(h = 10)
 
 ```{r}
 #| echo: true
-as_tsibble(AirPassengers) |>
-  model(arima = ARIMA(log(value))) |>
-  report()
+as_tsibble(AirPassengers) |> model(ARIMA(log(value))) |> report()
 ```
 
 ## fable::ARIMA()
 
 ```{r}
 #| echo: true
-as_tsibble(AirPassengers) |>
-  model(arima = ARIMA(log(value))) |>
-  forecast(h = 10)
+as_tsibble(AirPassengers) |> model(ARIMA(log(value))) |> forecast(h = 10)
 ```
 
 ## smooth::auto.ssarima()
@@ -362,6 +323,14 @@ bench::mark(
 ```{r}
 tar_read(arima_benchmark)
 ```
+
+## R reconciliation packages
+\vspace*{-0.4cm}\fontsize{13}{14}\sf
+
+```{r}
+tar_read(r_reco_table)
+```
+
 
 # Python
 
@@ -443,6 +412,33 @@ tar_read(arima_benchmark)
 
 \begin{textblock}{3.6}(11.7,1.2)\begin{block}{}(Release dates)\end{block}\end{textblock}
 
+## ML forecasting methods available in `GluonTS`
+\vspace*{-0.25cm}
+\begin{multicols}{2}
+\begin{itemize}\tightlist
+\item \texttt{DeepAR}
+\item \texttt{DeepState}
+\item \texttt{DeepFactor}
+\item \texttt{Deep Renewal Processes}
+\item \texttt{GPForecaster}
+\item \texttt{MQ-CNN}
+\item \texttt{MQ-RNN}
+\item \texttt{N-BEATS}
+\item \texttt{Rotbaum}
+\item \texttt{Temporal Fusion Transformer}
+\item \texttt{Transformer}
+\item \texttt{WaveNet}
+\item \texttt{SimpleFeedForward}
+\item \texttt{DeepNPTS}
+\item \texttt{MQF2}
+\item \texttt{DeepVAR}
+\item \texttt{GPVAR}
+\item \texttt{LSTNet}
+\item \texttt{DeepTPP}
+\item \texttt{DeepVARHierarchical}
+\end{itemize}
+\end{multicols}
+
 ## Forecasting methods available in `NeuralForecast`
 
 \begin{textblock}{15}(0,1)
@@ -484,51 +480,27 @@ tar_read(arima_benchmark)
 \end{textblock}
 
 
-## ML forecasting methods available in `GluonTS`
-\vspace*{-0.25cm}
-\begin{multicols}{2}
-\begin{itemize}\tightlist
-\item \texttt{DeepAR}
-\item \texttt{DeepState}
-\item \texttt{DeepFactor}
-\item \texttt{Deep Renewal Processes}
-\item \texttt{GPForecaster}
-\item \texttt{MQ-CNN}
-\item \texttt{MQ-RNN}
-\item \texttt{N-BEATS}
-\item \texttt{Rotbaum}
-\item \texttt{Temporal Fusion Transformer}
-\item \texttt{Transformer}
-\item \texttt{WaveNet}
-\item \texttt{SimpleFeedForward}
-\item \texttt{DeepNPTS}
-\item \texttt{MQF2}
-\item \texttt{DeepVAR}
-\item \texttt{GPVAR}
-\item \texttt{LSTNet}
-\item \texttt{DeepTPP}
-\item \texttt{DeepVARHierarchical}
-\end{itemize}
-\end{multicols}
-
 ## Python reconciliation packages
+\vspace*{-0.4cm}\fontsize{13}{14}\sf
 
-* HierarchicalForecast (Nixtla)
-* sktime
-* pyhts
-* Darts
+```{r}
+tar_read(py_reco_table)
+```
 
 ## Foundation models
 
 * Time-LLM (Jin et al. 2023)
 * TimeGPT-1 (Garza, Challu, and Mergenthaler-Canseco 2023)
-* Lag-Llama (Rasul et al. 2023)
+* **Lag-Llama** (Rasul et al. 2023)
 * TimesFM (Das et al. 2023)
 * Tiny Time Mixers (Ekambaram et al. 2024)
 * Moirai (Woo et al. 2024)
 * MOMENT (Goswami et al. 2024)
 * UniTS (Gao et al. 2024)
 * Chronos (Ansari et al. 2024)
+* Time-MoE (Shi et al, 2024)
+
+\begin{textblock}{3.}(12,1)\begin{block}{}\textbf{Open source}\end{block}\end{textblock}
 
 
 # Julia
@@ -536,9 +508,32 @@ tar_read(arima_benchmark)
 
 * `forecast`
 
+# Data
+
+## forecastingdata.org
+
+\placefig{0}{1.1}{width=16cm}{figs/forecastingdata.png}
+
 # Books
 
 ## Forecasting: principles and practice
 
 \placefig{0}{1.1}{width=16cm}{figs/OTexts.png}
 \begin{textblock}{2.8}(12.5,0)\begin{block}{}\tt OTexts.com\end{block}\end{textblock}
+\begin{textblock}{3}(1.2,8.2)\begin{block}{}\fontsize{8}{9}\sf 1st ed 2013; 2nd ed 2018\end{block}\end{textblock}
+\begin{textblock}{1.4}(7.5,8.2)\begin{block}{}\fontsize{8}{9}\sf 3rd ed 2021\end{block}\end{textblock}
+\begin{textblock}{0.6}(13.2,8.2)\begin{block}{}\fontsize{8}{9}\sf 2025\end{block}\end{textblock}
+
+## Forecasting and analytics with ADAM
+
+\placefig{0}{1.1}{height=8cm}{figs/ADAM-Cover-web}
+\begin{textblock}{5.6}(6.5,2)\begin{block}{}\tt openforecast.org/adam/\end{block}\end{textblock}
+
+## Links
+
+\begin{textblock}{7.2}(4.4,3.6)
+\begin{alertblock}{}
+\fontsize{18}{22}\sf\bfseries\centering
+robjhyndman.com/osfs25
+\end{alertblock}
+\end{textblock}

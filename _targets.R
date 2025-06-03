@@ -37,5 +37,9 @@ list(
   ),
   tar_target(ets_benchmark, create_ets_benchmark()),
   tar_target(arima_benchmark, create_arima_benchmark()),
+  tar_target(r_reco, R_reconciliation_packages()),
+  tar_target(r_reco_table, reco_pkg_table(r_reco)),
+  tar_target(py_reco, Python_reconciliation_packages()),
+  tar_target(py_reco_table, reco_pkg_table(py_reco)),
   tar_quarto(osfs25, "osfs25.qmd")
 )
