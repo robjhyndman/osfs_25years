@@ -398,17 +398,19 @@ tar_read(r_reco_table)
 ::::
 
 ## Python packages with ML methods
+\fontsize{14}{16}\sf
 
-* `sktime` (2019--2025)
-* `GluonTS` (AWS, 2019--2025)
+* `aeon` (2023--2025) --- fork of `sktime`
 * `Darts` (2020--2025)
+* `GluonTS` (AWS, 2019--2025)
+* `Kats` (2021--2022)
 * `Merlion` (Salesforce, 2021--2023)
 * `MLforecast` (Nixtla 2022--2025)
 * `NeuralForecast` (Nixtla 2022--2025)
-* `aeon` (2023--2025) --- fork of `sktime`
-* `skforecast` (2021--2025)
 * `NeuralProphet` (2020--2024)
-* `Kats` (2021--2022)
+* `pytorch-forecasting` (2020--2025)
+* `skforecast` (2021--2025)
+* `sktime` (2019--2025)
 
 \begin{textblock}{3.6}(11.7,1.2)\begin{block}{}(Release dates)\end{block}\end{textblock}
 
@@ -416,26 +418,26 @@ tar_read(r_reco_table)
 \vspace*{-0.25cm}
 \begin{multicols}{2}
 \begin{itemize}\tightlist
-\item \texttt{DeepAR}
-\item \texttt{DeepState}
-\item \texttt{DeepFactor}
 \item \texttt{Deep Renewal Processes}
+\item \texttt{DeepAR}
+\item \texttt{DeepFactor}
+\item \texttt{DeepNPTS}
+\item \texttt{DeepState}
+\item \texttt{DeepTPP}
+\item \texttt{DeepVAR}
+\item \texttt{DeepVARHierarchical}
 \item \texttt{GPForecaster}
+\item \texttt{GPVAR}
+\item \texttt{LSTNet}
 \item \texttt{MQ-CNN}
 \item \texttt{MQ-RNN}
+\item \texttt{MQF2}
 \item \texttt{N-BEATS}
 \item \texttt{Rotbaum}
+\item \texttt{SimpleFeedForward}
 \item \texttt{Temporal Fusion Transformer}
 \item \texttt{Transformer}
 \item \texttt{WaveNet}
-\item \texttt{SimpleFeedForward}
-\item \texttt{DeepNPTS}
-\item \texttt{MQF2}
-\item \texttt{DeepVAR}
-\item \texttt{GPVAR}
-\item \texttt{LSTNet}
-\item \texttt{DeepTPP}
-\item \texttt{DeepVARHierarchical}
 \end{itemize}
 \end{multicols}
 
