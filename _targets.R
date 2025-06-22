@@ -37,6 +37,28 @@ list(
   ),
   tar_target(ets_benchmark, create_ets_benchmark()),
   tar_target(arima_benchmark, create_arima_benchmark()),
+  tar_target(
+    py_packages,
+    c(
+      "aeon",
+      "darts",
+      "gluonts",
+      "kats",
+      "merlion",
+      "mlforecast",
+      "neuralforecast",
+      "neuralprophet",
+      "pmdarima",
+      "pytorch-forecasting",
+      "skforecast",
+      "sktime",
+      "statsforecast",
+      "statsmodels"
+    )
+  ),
+  tar_target(pypi, pypi_downloads2(py_packages)),
+  tar_target(pypi_graph1, pypi_graph(pypi)),
+  tar_target(pypi_graph2, pypi_graph(pypi, all = FALSE)),
   tar_target(r_reco, R_reconciliation_packages()),
   tar_target(r_reco_table, reco_pkg_table(r_reco)),
   tar_target(py_reco, Python_reconciliation_packages()),

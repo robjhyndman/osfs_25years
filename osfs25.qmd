@@ -347,6 +347,18 @@ tar_read(r_reco_table)
 
 \begin{textblock}{3.6}(11.7,1.2)\begin{block}{}(Release dates)\end{block}\end{textblock}
 
+## Pypi downloads
+
+```{r}
+tar_read(pypi_graph1)
+```
+
+## Pypi downloads
+
+```{r}
+tar_read(pypi_graph2)
+```
+
 ## Most complete packages
 
 :::: {.columns}
@@ -466,7 +478,7 @@ tar_read(r_reco_table)
 \item \texttt{NLinear}
 \item \texttt{PatchTST}
 \item \texttt{RNN}
-\item \texttt{SOFTS}
+\item \texttt{SOFTS}a
 \item \texttt{StemGNN}
 \item \texttt{TCN}
 \item \texttt{TFT}
