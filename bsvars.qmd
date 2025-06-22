@@ -45,7 +45,7 @@ ggplot2::theme_set(
 ```{r}
 library(bsvars)
 # specify the model and set seed
-set.seed(2025-6-27)
+set.seed(2025 - 6 - 27)
 us_fiscal_lsuw |>
   specify_bsvar$new(p = 1) |>
   estimate(S = 5, show_progress = FALSE) |>
@@ -66,8 +66,7 @@ us_fiscal_lsuw |>
     exogenous_forecast = us_fiscal_ex_forecasts,
     conditional_forecast = us_fiscal_cond_forecasts
   ) |>
-  plot(col = "#c24b14") 
-
+  plot(col = "#c24b14")
 ```
 
 ## Links

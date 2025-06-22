@@ -7,14 +7,14 @@ make_download_plot <- function(
   pkgs <- c("forecast", pkgs[pkgs != "forecast"])
   cols <- c(
     "#000000",
-    '#e41a1c',
-    '#377ef8',
-    '#4daf4a',
-    '#984ea3',
-    '#a65628',
-    '#ff7f00',
-    '#999999',
-    '#f781bf',
+    "#e41a1c",
+    "#377ef8",
+    "#4daf4a",
+    "#984ea3",
+    "#a65628",
+    "#ff7f00",
+    "#999999",
+    "#f781bf",
     "#80b1d3"
   )
   cols <- cols[seq_along(pkgs)]
