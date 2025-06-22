@@ -538,9 +538,17 @@ tar_read(py_reco_table)
 
 ## Links
 
-\begin{textblock}{7.2}(4.4,3.6)
+\begin{textblock}{7.6}(4.2,3.6)
 \begin{alertblock}{}
 \fontsize{18}{22}\sf\bfseries\centering
-robjhyndman.com/osfs25
+\href{https://robjhyndman.com/osfs25}{robjhyndman.com/osfs25}
 \end{alertblock}
+\end{textblock}
+
+
+\begin{textblock}{7.6}(4.2,5.6)
+\begin{block}{}
+\fontsize{18}{22}\sf\bfseries\centering
+\href{https://robjhyndman.com/postdoc}{robjhyndman.com/postdoc}
+\end{block}
 \end{textblock}
