@@ -1,37 +1,15 @@
 name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
-packages|stem|81f867ce31debc02|f6bfc8ad7f2d7303|5e5bdd4a44d8643e|-1880897961||t20238.0767261995s|s460b|460|rds|local|vector|||0||
 top_ten_last5|stem|1cdf819c716a371e|29e1d265700bb0c9|ecfc8b3e5b69cdba|1872837120||t20238.0786677993s|s275b|275|rds|local|vector|||0.012||
 forecast_history|object|66fb5486ed6f1ced
-downloads|stem|0deb3fb4f1be68da|5643ac08e3d69465|ca6364ed79bd2f09|2030425047||t20238.091633564s|s17884b|17884|rds|local|vector|||22.924|Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future. Time interval in the future|
-top10|stem|4ce52c308d876ff9|d722a74e4f5fb69f|2e734b0a0ac9d0f6|675525796||t20238.0922455363s|s275b|275|rds|local|vector|||0.025||
-top_ten_table|stem|18a9f23567a4b8e4|6588dfe725b3d9af|7111de95aeb1bd6a|757054447||t20238.0938577466s|s658b|658|rds|local|vector|||0.017||
 plot2|stem|b0146e21822a2c10|77455f8304f77fda|eb94ec4eca3cc5b7|-1544046761||t20238.0950928818s|s120536b|120536|rds|local|vector|||0.03||
 plot3|stem|0393dde40e9aaa90|ce5b9001ddbbc2c3|eb94ec4eca3cc5b7|923199574||t20238.0950943865s|s113450b|113450|rds|local|vector|||0.025||
-ets_benchmark|stem|87ea5ecec3bf1628|070306883c2602ea|db363f2bae1123cd|670070263||t20238.1447673151s|s264b|264|rds|local|vector|||55.873|Some expressions had a GC in every iteration; so filtering is disabled.|
-arima_benchmark|stem|81efdea0da2c16d1|2b73c7d7f400b4f7|e6aeea7298e03fed|-1513338673||t20238.1641731328s|s264b|264|rds|local|vector|||72.874|Some expressions had a GC in every iteration; so filtering is disabled.|
-history_file|stem|23a4c597e021e6d2|be229ea1a9426741|2c530c1562a7fbd1|-1058938679|data/history.csv|t20238.1788933848s|s1163b|1163|file|local|vector|||1.56||
-history|stem|0d288e159018f6cf|3012b69f58376155|83d31bd15d583107|1253587111||t20238.1805067297s|s699b|699|rds|local|vector|||0||
-table1|stem|f9e124797b14e07d|9ba94aef760fa8de|1ff376962eb918b4|969053063||t20238.1822214971s|s1022b|1022|rds|local|vector|||0.018||
-table2|stem|bc8ad3e388c7e457|989b95c3fa180ad7|1ff376962eb918b4|-470181538||t20238.1822226314s|s1005b|1005|rds|local|vector|||0.016||
 make_plot1|function|792dbc287458c42c
 make_plot2|function|62ae425ea2b31f21
-plot1|stem|31250ee795d5280a|85d908e58babf3a2|21984de07070ef62|-1880136255||t20241.1247307112s|s242990b|242990|rds|local|vector|||0.166||
-plot2a|stem|8bfd97abb9e8c3e5|573471bc17a5f775|21984de07070ef62|1659905545||t20241.1247357807s|s262154b|262154|rds|local|vector|||0.03||
-plot2b|stem|b04542f3f83f3511|022e5aa3bd481a70|21984de07070ef62|-478493975||t20241.1247393224s|s266259b|266259|rds|local|vector|||0.039||
-plot2c|stem|ce6ea22a47b1c7cb|4e6262478d2c2489|21984de07070ef62|25416129||t20241.1247420886s|s259749b|259749|rds|local|vector|||0.04||
-py_reco|stem|5544633d01c3ec1b|93020ba983a39ccf|f027cfde8a2a3801|855424212||t20242.1129715668s|s315b|315|rds|local|vector|||1.71||
-r_reco|stem|1ebf47af3331464b|cf293bba8b3f21f6|23bd1cf4d418de0b|-1698505518||t20242.1129727127s|s298b|298|rds|local|vector|||0.047||
-py_reco_table|stem|aa00058da58f57d8|08622f2b661c633d|c4a28f9a15264cfe|150348682||t20242.1203048679s|s788b|788|rds|local|vector|||0.044||
-r_reco_table|stem|5409cc9fd8ce653b|b16cd3bf58fbd85d|b62a18fa06678bfe|-369967714||t20242.1203059558s|s776b|776|rds|local|vector|||0.009||
-py_packages|stem|fd7f075f92677aa9|4f982fa4f0ba3495|2c530c1562a7fbd1|505701015||t20261.2614495103s|s165b|165|rds|local|vector|||1.481||
-pypi|stem|7491717f9645ad63|e94094f8fe27836d|d4d2b7bcb4a07546|-958948573||t20261.2774441986s|s1224b|1224|rds|local|vector|||0.119||
-pypi_graph1|stem|17348ba66eb09e48|691d47555e7b224c|3e48a4e100e8516c|1082282295||t20261.2858873885s|s124054b|124054|rds|local|vector|||0.078||
-pypi_graph2|stem|66f2fc1e26b2f8da|1a7c81df852fcb64|3e48a4e100e8516c|1567191169||t20261.2858907336s|s123576b|123576|rds|local|vector|||0.209||
 R_reconciliation_packages|function|bd28855b63d8f91b
 create_ets_benchmark|function|f16e9899fb24f848
 get_top_ten|function|53a2a063216448cb
-pypi_downloads_pkg|function|6c304989b50fbcf4
-.Random.seed|object|6e5bf38860e8e90a
+pypi_downloads_pkg|function|a4ca579b68b077ab
+.Random.seed|object|cc8e14ea93183863
 make_top_ten_table|function|22cc014d43859c7a
 reco_pkg_table|function|b275c3d2b88a7135
 make_download_plot|function|df868b652799968a
@@ -42,5 +20,27 @@ create_arima_benchmark|function|94aee30dac29cb88
 pypi_downloads2|function|a17ead7021cb1c8e
 pypi_graph|function|33384eac36bef623
 make_table_history|function|597751ddc1f86932
-pypi_downloads|function|f31731a4567bd69e
-osfs25|stem|d21030ca106bf622|d5e8a557e638201e|34a73d2047f814b0|-1232696980|osfs25_files*osfs25.pdf*osfs25.qmd*_extensions/quarto-monash/presentation/_extension.yml*_extensions/quarto-monash/presentation/_images/background/bg-01.png*_extensions/quarto-monash/presentation/_images/background/bg-02.png*_extensions/quarto-monash/presentation/_images/background/bg-03.png*_extensions/quarto-monash/presentation/_images/background/bg-04.png*_extensions/quarto-monash/presentation/_images/background/bg-05.png*_extensions/quarto-monash/presentation/_images/background/bg-06.png*_extensions/quarto-monash/presentation/_images/background/bg-07.png*_extensions/quarto-monash/presentation/_images/background/bg-08.png*_extensions/quarto-monash/presentation/_images/background/bg-09.png*_extensions/quarto-monash/presentation/_images/background/bg-10.png*_extensions/quarto-monash/presentation/_images/background/bg-11.png*_extensions/quarto-monash/presentation/_images/background/bg-12.png*_extensions/quarto-monash/presentation/_images/background/bg-13.png*_extensions/quarto-monash/presentation/_images/logo/monash-one-line-black-rgb.png*_extensions/quarto-monash/presentation/_images/logo/monash-shield.png*_extensions/quarto-monash/presentation/_images/logo/monash-stacked-black-rgb.png*_extensions/quarto-monash/presentation/_images/logo/monash-stacked-blue-rgb-transparent.png*_extensions/quarto-monash/presentation/_images/logo/monash-stacked-blue-rgb.png*_extensions/quarto-monash/presentation/_images/logo/monash-stacked-reversed-white.png*_extensions/quarto-monash/presentation/beamer/beamerthemeMonash.sty*_extensions/quarto-monash/presentation/beamer/before-title.tex*_extensions/quarto-monash/presentation/beamer/toc.tex*figs/ADAM-Cover-web.jpg*figs/ctvts.pdf*figs/fable.png*figs/forecast.png*figs/forecastingdata.png*figs/greybox.png*figs/hts.png*figs/julia.png*figs/OTexts.png*figs/python.png*figs/R.png*figs/smooth.png*figs/thief.png|t20261.2874261573s|s12919459b|12919459|file|local|vector|||43.838||
+pypi_downloads|function|4f258020e3fa9c1e
+ets_benchmark|stem|935988568a1fd338|070306883c2602ea|db363f2bae1123cd|670070263||t20262.315117599s|s267b|267|rds|local|vector|||30.2|Some expressions had a GC in every iteration; so filtering is disabled.|
+packages|stem|81f867ce31debc02|f6bfc8ad7f2d7303|5e5bdd4a44d8643e|-1880897961||t20259.9196454385s|s460b|460|rds|local|vector|||0||
+py_reco|stem|5544633d01c3ec1b|93020ba983a39ccf|f027cfde8a2a3801|855424212||t20259.9196459015s|s315b|315|rds|local|vector|||1.71||
+history_file|stem|23a4c597e021e6d2|be229ea1a9426741|2c530c1562a7fbd1|-1058938679|data/history.csv|t20259.9093321975s|s1163b|1163|file|local|vector|||1.56||
+arima_benchmark|stem|327a9a9dc6955fe5|2b73c7d7f400b4f7|e6aeea7298e03fed|-1513338673||t20262.3156022479s|s262b|262|rds|local|vector|||41.838|Some expressions had a GC in every iteration; so filtering is disabled.|
+py_packages|stem|fd7f075f92677aa9|4f982fa4f0ba3495|2c530c1562a7fbd1|505701015||t20262.3156026646s|s165b|165|rds|local|vector|||0||
+r_reco|stem|1ebf47af3331464b|cf293bba8b3f21f6|23bd1cf4d418de0b|-1698505518||t20259.9201682723s|s298b|298|rds|local|vector|||0.047||
+downloads|stem|c5d8a4d43339e55a|5643ac08e3d69465|ca6364ed79bd2f09|2030425047||t20262.3157795035s|s17889b|17889|rds|local|vector|||15.263||
+py_reco_table|stem|aa00058da58f57d8|08622f2b661c633d|c4a28f9a15264cfe|150348682||t20259.9203334685s|s788b|788|rds|local|vector|||0.044||
+history|stem|0d288e159018f6cf|3012b69f58376155|83d31bd15d583107|1253587111||t20259.9203335958s|s699b|699|rds|local|vector|||0||
+pypi|stem|7491717f9645ad63|e94094f8fe27836d|d4d2b7bcb4a07546|-958948573||t20262.3157805336s|s1224b|1224|rds|local|vector|||0.045||
+r_reco_table|stem|5409cc9fd8ce653b|b16cd3bf58fbd85d|b62a18fa06678bfe|-369967714||t20259.920333781s|s776b|776|rds|local|vector|||0.009||
+top10|stem|d65d3903a1f87356|d722a74e4f5fb69f|6d22130c1da83879|675525796||t20262.3157808229s|s272b|272|rds|local|vector|||0.011||
+table1|stem|f9e124797b14e07d|9ba94aef760fa8de|1ff376962eb918b4|969053063||t20259.9203341977s|s1022b|1022|rds|local|vector|||0.018||
+table2|stem|bc8ad3e388c7e457|989b95c3fa180ad7|1ff376962eb918b4|-470181538||t20259.9203344407s|s1005b|1005|rds|local|vector|||0.016||
+pypi_graph1|stem|5fd533f83a843b0e|691d47555e7b224c|3e48a4e100e8516c|1082282295||t20262.3157817836s|s124072b|124072|rds|local|vector|||0.039||
+pypi_graph2|stem|bcecfab919a8e1d2|1a7c81df852fcb64|3e48a4e100e8516c|1567191169||t20262.3157825011s|s123597b|123597|rds|local|vector|||0.018||
+plot1|stem|228e1aa5f46e05d6|85d908e58babf3a2|6a0ea521f9b8f2a9|-1880136255||t20262.3157835775s|s174725b|174725|rds|local|vector|||0.034||
+plot2a|stem|aa4e39a258602739|573471bc17a5f775|6a0ea521f9b8f2a9|1659905545||t20262.3157844919s|s193786b|193786|rds|local|vector|||0.014||
+plot2b|stem|9ceb9dce1df2c934|022e5aa3bd481a70|6a0ea521f9b8f2a9|-478493975||t20262.3157855567s|s198018b|198018|rds|local|vector|||0.024||
+plot2c|stem|5d2e3b3d93e2bdd8|4e6262478d2c2489|6a0ea521f9b8f2a9|25416129||t20262.3157866678s|s191478b|191478|rds|local|vector|||0.024||
+top_ten_table|stem|ed8982211493ecbe|6588dfe725b3d9af|d596090d9c402b0b|757054447||t20262.315786853s|s658b|658|rds|local|vector|||0.006||
+osfs25|stem|99b669db4bb31ac7|d5e8a557e638201e|e11a6c76ad1d906a|-1232696980|osfs25_files*osfs25.pdf*osfs25.qmd*_extensions/quarto-monash/presentation/_extension.yml*_extensions/quarto-monash/presentation/_images/background/bg-01.png*_extensions/quarto-monash/presentation/_images/background/bg-02.png*_extensions/quarto-monash/presentation/_images/background/bg-03.png*_extensions/quarto-monash/presentation/_images/background/bg-04.png*_extensions/quarto-monash/presentation/_images/background/bg-05.png*_extensions/quarto-monash/presentation/_images/background/bg-06.png*_extensions/quarto-monash/presentation/_images/background/bg-07.png*_extensions/quarto-monash/presentation/_images/background/bg-08.png*_extensions/quarto-monash/presentation/_images/background/bg-09.png*_extensions/quarto-monash/presentation/_images/background/bg-10.png*_extensions/quarto-monash/presentation/_images/background/bg-11.png*_extensions/quarto-monash/presentation/_images/background/bg-12.png*_extensions/quarto-monash/presentation/_images/background/bg-13.png*_extensions/quarto-monash/presentation/_images/logo/monash-one-line-black-rgb.png*_extensions/quarto-monash/presentation/_images/logo/monash-shield.png*_extensions/quarto-monash/presentation/_images/logo/monash-stacked-black-rgb.png*_extensions/quarto-monash/presentation/_images/logo/monash-stacked-blue-rgb-transparent.png*_extensions/quarto-monash/presentation/_images/logo/monash-stacked-blue-rgb.png*_extensions/quarto-monash/presentation/_images/logo/monash-stacked-reversed-white.png*_extensions/quarto-monash/presentation/beamer/beamerthemeMonash.sty*_extensions/quarto-monash/presentation/beamer/before-title.tex*_extensions/quarto-monash/presentation/beamer/toc.tex*figs/ADAM-Cover-web.jpg*figs/ctvts.pdf*figs/fable.png*figs/forecast.png*figs/forecastingdata.png*figs/greybox.png*figs/hts.png*figs/julia.png*figs/OTexts.png*figs/python.png*figs/R.png*figs/smooth.png*figs/thief.png|t20262.3161068736s|s13011529b|13011529|file|local|vector|||27.576||
