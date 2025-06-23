@@ -15,6 +15,7 @@ GROUP BY `month`
 ORDER BY `month` DESC"
   )
   tb <- bigrquery::bq_project_query("graphical-fort-463705-n8", query = sql)
+  #tb <- bigrquery::bq_project_query("pypi-stats-463705", query = sql)
   bigrquery::bq_table_download(tb) |>
     mutate(package = pkg)
 }
@@ -24,7 +25,7 @@ pypi_downloads <- function(pkgs) {
     return(readr::read_csv("data/pypi.csv"))
   }
 
-  out <- purrr::map(packages, pypi_downloads_pkg)
+  out <- purrr::map(pkgs, pypi_downloads_pkg)
   browser()
   write.csv(out, "data/pypi.csv", row.names = FALSE)
   out
